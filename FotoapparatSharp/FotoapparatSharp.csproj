@@ -5,24 +5,25 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B766FA96-F981-48A2-AAE9-CB17B792582A}</ProjectGuid>
+    <ProjectGuid>{A3F5814C-D2C0-4D03-91C2-77D8CD2887A8}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PhotectorSharp</RootNamespace>
-    <AssemblyName>PhotectorSharp</AssemblyName>
+    <RootNamespace>FotoapparatSharp</RootNamespace>
+    <AssemblyName>FotoapparatSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <AndroidEnableProguard>False</AndroidEnableProguard>
     <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
-    <AndroidEnableDesugar>True</AndroidEnableDesugar>
-    <!--New properties-->
-    <!-- <AndroidDexTool>d8</AndroidDexTool> -->
-    <!-- <AndroidLinkTool>r8</AndroidLinkTool> -->
-  </PropertyGroup>
+    <AndroidEnableDesugar>True</AndroidEnableDesugar><!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  
+<!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
@@ -58,17 +59,12 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\photector-debug.aar" />
+    <LibraryProjectZip Include="Jars\fotoapparat-2.6.1.aar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\aws-android-sdk-s3.jar" />
-    <EmbeddedReferenceJar Include="Jars\aws-android-sdk-core.jar" />
-    <EmbeddedReferenceJar Include="Jars\aws-android-sdk-kms.jar" />
-    <EmbeddedReferenceJar Include="Jars\retrofit-2.5.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\gson-2.6.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\okhttp-3.14.1.jar" />
-    <EmbeddedReferenceJar Include="Jars\okio-2.2.2.jar" />
-    <EmbeddedReferenceJar Include="Jars\org.apache.http.legacy.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-1.3.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlinx-coroutines-core-1.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlinx-coroutines-core-common-1.0.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
