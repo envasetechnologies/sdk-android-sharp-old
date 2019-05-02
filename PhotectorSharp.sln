@@ -9,6 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FotoapparatSharp", "Fotoapp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExifInterfaceSharp", "ExifInterfaceSharp\ExifInterfaceSharp.csproj", "{276337C8-1D80-4463-92CD-191080D55885}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSCoreSharp", "AWSCoreSharp\AWSCoreSharp.csproj", "{8B3311D0-DFE7-4EC4-ADF6-0A5DEC08F488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSMobileClientSharp", "AWSMobileClientSharp\AWSMobileClientSharp.csproj", "{1C77C9B7-4004-4D20-8520-9B9728C0AD02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSAuthCoreSharp", "AWSAuthCoreSharp\AWSAuthCoreSharp.csproj", "{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSCognitoIdentityProviderSharp", "AWSCognitoIdentityProviderSharp\AWSCognitoIdentityProviderSharp.csproj", "{C6D02BB3-F81F-400D-BA29-6A577A08A700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSKMSSharp", "AWSKMSSharp\AWSKMSSharp.csproj", "{3B7C7874-9FC6-4D61-885E-FE48991D8B2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSS3Sharp", "AWSS3Sharp\AWSS3Sharp.csproj", "{B72651AB-9F43-4D1F-8158-9286721C1121}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +43,29 @@ Global
 		{276337C8-1D80-4463-92CD-191080D55885}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{276337C8-1D80-4463-92CD-191080D55885}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{276337C8-1D80-4463-92CD-191080D55885}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3311D0-DFE7-4EC4-ADF6-0A5DEC08F488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3311D0-DFE7-4EC4-ADF6-0A5DEC08F488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3311D0-DFE7-4EC4-ADF6-0A5DEC08F488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3311D0-DFE7-4EC4-ADF6-0A5DEC08F488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C77C9B7-4004-4D20-8520-9B9728C0AD02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C77C9B7-4004-4D20-8520-9B9728C0AD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C77C9B7-4004-4D20-8520-9B9728C0AD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C77C9B7-4004-4D20-8520-9B9728C0AD02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D02BB3-F81F-400D-BA29-6A577A08A700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D02BB3-F81F-400D-BA29-6A577A08A700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D02BB3-F81F-400D-BA29-6A577A08A700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D02BB3-F81F-400D-BA29-6A577A08A700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7C7874-9FC6-4D61-885E-FE48991D8B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7C7874-9FC6-4D61-885E-FE48991D8B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7C7874-9FC6-4D61-885E-FE48991D8B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7C7874-9FC6-4D61-885E-FE48991D8B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72651AB-9F43-4D1F-8158-9286721C1121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72651AB-9F43-4D1F-8158-9286721C1121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72651AB-9F43-4D1F-8158-9286721C1121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72651AB-9F43-4D1F-8158-9286721C1121}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

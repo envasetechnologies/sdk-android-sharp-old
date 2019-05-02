@@ -125,6 +125,30 @@
       <Project>{276337C8-1D80-4463-92CD-191080D55885}</Project>
       <Name>ExifInterfaceSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AWSMobileClientSharp\AWSMobileClientSharp.csproj">
+      <Project>{1C77C9B7-4004-4D20-8520-9B9728C0AD02}</Project>
+      <Name>AWSMobileClientSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSS3Sharp\AWSS3Sharp.csproj">
+      <Project>{B72651AB-9F43-4D1F-8158-9286721C1121}</Project>
+      <Name>AWSS3Sharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSKMSSharp\AWSKMSSharp.csproj">
+      <Project>{3B7C7874-9FC6-4D61-885E-FE48991D8B2A}</Project>
+      <Name>AWSKMSSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSCoreSharp\AWSCoreSharp.csproj">
+      <Project>{8B3311D0-DFE7-4EC4-ADF6-0A5DEC08F488}</Project>
+      <Name>AWSCoreSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSCognitoIdentityProviderSharp\AWSCognitoIdentityProviderSharp.csproj">
+      <Project>{C6D02BB3-F81F-400D-BA29-6A577A08A700}</Project>
+      <Name>AWSCognitoIdentityProviderSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSAuthCoreSharp\AWSAuthCoreSharp.csproj">
+      <Project>{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}</Project>
+      <Name>AWSAuthCoreSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
