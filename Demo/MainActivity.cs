@@ -6,9 +6,10 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-//using Com.Peir.Photector;
 using IO.Fotoapparat;
 using Java.Lang;
+using PhotectorSharp;
+using System.Collections.Generic;
 
 namespace Demo
 {
@@ -72,10 +73,11 @@ namespace Demo
             View view = (View)sender;
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-                
 
-            var photoResult = camera.TakePicture();
-            photoResult.ToBitmap().WhenDone(new Test());
+            Photector.Instance.CreateEvent(this, "", new List<System.String>());
+
+            //var photoResult = camera.TakePicture();
+            //photoResult.ToBitmap().WhenDone(new Test());
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -88,10 +90,10 @@ namespace Demo
 
     class Test : Java.Lang.Object, IO.Fotoapparat.Result.IWhenDoneListener
     {
-
         public void WhenDone(Java.Lang.Object p0)
         {
-            throw new NotImplementedException();
+            var bitmap = (IO.Fotoapparat.Result.BitmapPhoto)p0;
+            Console.WriteLine("made photo {0} bytes", bitmap.Bitmap.ByteCount);
         }
     }
 }

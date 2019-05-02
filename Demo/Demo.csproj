@@ -65,6 +65,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DemoApplication.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -115,6 +116,14 @@
     <ProjectReference Include="..\FotoapparatSharp\FotoapparatSharp.csproj">
       <Project>{A3F5814C-D2C0-4D03-91C2-77D8CD2887A8}</Project>
       <Name>FotoapparatSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotectorSharp\PhotectorSharp.csproj">
+      <Project>{B766FA96-F981-48A2-AAE9-CB17B792582A}</Project>
+      <Name>PhotectorSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExifInterfaceSharp\ExifInterfaceSharp.csproj">
+      <Project>{276337C8-1D80-4463-92CD-191080D55885}</Project>
+      <Name>ExifInterfaceSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
