@@ -20,6 +20,8 @@ namespace Demo
             try
             {
                 Photector.Instance.Init(this, "", "", "");
+                var uploadManager = Photector.EventUploadManager.Sdk;
+                Photector.Instance.UploadManager = uploadManager;
             }
             catch (Exception e)
             {

@@ -70,14 +70,13 @@ namespace Demo
 
         private void FabOnClick(object sender, EventArgs eventArgs)
         {
-            View view = (View)sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-
-            Photector.Instance.CreateEvent(this, "", new List<System.String>());
-
-            //var photoResult = camera.TakePicture();
-            //photoResult.ToBitmap().WhenDone(new Test());
+            try
+            {
+                Photector.Instance.CreateEvent(this, "", new List<System.String>());
+            }
+            catch (System.Exception e) {
+                Console.WriteLine(e);
+            }
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

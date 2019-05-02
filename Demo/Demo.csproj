@@ -26,7 +26,7 @@
     <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
     <AndroidEnableDesugar>True</AndroidEnableDesugar>
     <!--New properties-->
-    <!-- <AndroidDexTool>d8</AndroidDexTool> -->
+    <AndroidDexTool>d8</AndroidDexTool>
     <!-- <AndroidLinkTool>r8</AndroidLinkTool> -->
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -38,7 +38,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
-    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
