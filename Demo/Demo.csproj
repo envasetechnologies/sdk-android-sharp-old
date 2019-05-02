@@ -23,12 +23,14 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidEnableProguard>False</AndroidEnableProguard>
-    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
-    <AndroidEnableDesugar>True</AndroidEnableDesugar>
+    <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
+    <AndroidEnableDesugar>True</AndroidEnableDesugar><!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  
     <!--New properties-->
-    <AndroidDexTool>d8</AndroidDexTool>
-    <!-- <AndroidLinkTool>r8</AndroidLinkTool> -->
-  </PropertyGroup>
+<!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
     <DebugType>portable</DebugType>
@@ -148,6 +150,14 @@
     <ProjectReference Include="..\AWSAuthCoreSharp\AWSAuthCoreSharp.csproj">
       <Project>{7EBF7A64-48EB-4B41-AD38-21356D6AEF8A}</Project>
       <Name>AWSAuthCoreSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSCognitoIdentityProviderASFSharp\AWSCognitoIdentityProviderASFSharp.csproj">
+      <Project>{2A87FA9C-B514-4A93-8570-BA5FDA5B1BE8}</Project>
+      <Name>AWSCognitoIdentityProviderASFSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AWSCognitoAuthSharp\AWSCognitoAuthSharp.csproj">
+      <Project>{67686840-75E1-48FF-8D7C-CF6C0BAB4F12}</Project>
+      <Name>AWSCognitoAuthSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

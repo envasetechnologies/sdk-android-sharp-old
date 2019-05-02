@@ -3,6 +3,11 @@
     <attr path="/api/package[@name='com.peir.photector']" name="managedName">PhotectorSharp</attr>
     <remove-node path="/api/package[starts-with(@name, 'org.apache')]" />
     <remove-node path="/api/package[starts-with(@name, 'com.amazonaws')]" />
+    <remove-node path="/api/package[starts-with(@name, 'okio')]" />
+    <remove-node path="/api/package[starts-with(@name, 'retrofit2')]" />
+    <remove-node path="/api/package[starts-with(@name, 'com.google.gson')]" />
+    <remove-node path="/api/package[starts-with(@name, 'okhttp3')]" />
+    <remove-node path="/api/package[starts-with(@name, 'android.net.http')]" />
     <!--
   This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />

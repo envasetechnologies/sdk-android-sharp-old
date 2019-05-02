@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C6D02BB3-F81F-400D-BA29-6A577A08A700}</ProjectGuid>
+    <ProjectGuid>{2A87FA9C-B514-4A93-8570-BA5FDA5B1BE8}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AWSCognitoIdentityProviderSharp</RootNamespace>
-    <AssemblyName>AWSCognitoIdentityProviderSharp</AssemblyName>
+    <RootNamespace>AWSCognitoIdentityProviderASFSharp</RootNamespace>
+    <AssemblyName>AWSCognitoIdentityProviderASFSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
@@ -52,7 +52,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\aws-android-sdk-cognitoidentityprovider-2.9.1.jar" />
+    <EmbeddedJar Include="Jars\aws-android-sdk-cognitoidentityprovider-asf-1.0.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

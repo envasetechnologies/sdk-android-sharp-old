@@ -20,6 +20,10 @@
     <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
     <AndroidEnableDesugar>True</AndroidEnableDesugar><!--     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  <!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  <!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
  -->  
 <!--     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidLinkTool>r8</AndroidLinkTool>
@@ -62,9 +66,9 @@
     <LibraryProjectZip Include="Jars\fotoapparat-2.6.1.aar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-1.3.0.jar" />
     <EmbeddedReferenceJar Include="Jars\kotlinx-coroutines-core-1.0.0.jar" />
     <EmbeddedReferenceJar Include="Jars\kotlinx-coroutines-core-common-1.0.0.jar" />
+    <EmbeddedReferenceJar Include="Jars\kotlin-stdlib-1.3.0.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
