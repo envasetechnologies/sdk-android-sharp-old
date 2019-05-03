@@ -41,14 +41,14 @@ namespace Demo
         {
             base.OnResume();
 
-            camera.Start();
+            //camera.Start();
         }
 
         protected override void OnPause()
         {
             base.OnPause();
 
-            camera.Stop();
+            //camera.Stop();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
