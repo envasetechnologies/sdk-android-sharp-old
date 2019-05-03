@@ -5,7 +5,7 @@ using PhotectorSharp;
 
 namespace Demo
 {
-    [Application]
+    [Application(Name = "com.peir.demo.DemoApplication")]
     public class DemoApplication : Application
     {
         public DemoApplication(IntPtr handle, JniHandleOwnership ownership) : base(handle, ownership)
@@ -19,7 +19,7 @@ namespace Demo
 
             try
             {
-                Photector.Instance.Init(this, "", "", "");
+                Photector.Instance.Init(Application.Context, "", "", "");
                 var uploadManager = Photector.EventUploadManager.Sdk;
                 Photector.Instance.UploadManager = uploadManager;
             }

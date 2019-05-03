@@ -12,8 +12,8 @@ using PhotectorSharp;
 using System.Collections.Generic;
 
 namespace Demo
-{
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+{ 
+    [Activity(Name= "Demo.MainActivity", Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         Fotoapparat camera;

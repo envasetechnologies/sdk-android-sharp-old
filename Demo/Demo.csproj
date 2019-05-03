@@ -26,6 +26,8 @@
     <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
     <AndroidEnableDesugar>True</AndroidEnableDesugar><!--     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  <!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
  -->  
     <!--New properties-->
 <!--     <AndroidDexTool>d8</AndroidDexTool>
