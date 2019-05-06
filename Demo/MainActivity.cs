@@ -72,7 +72,10 @@ namespace Demo
         {
             try
             {
-                Photector.Instance.CreateEvent(this, "", new List<System.String>());
+                var location = new Android.Locations.Location("");
+                location.Latitude = 1.0;
+                location.Longitude = 1.0;
+                Photector.Instance.CreateEvent(this, "", new List<System.String>(), location);
             }
             catch (System.Exception e) {
                 Console.WriteLine(e);
