@@ -17,6 +17,12 @@ First of all, there are some very important points to keep in mind when creating
 - The project might need some manual editing in a text file to enable or disable certain functionality that cannot otherwise be enabled or disabled (e.g. d8 dexer, r8 linker, desugaring, etc...).
 - There might be other, unforseen issues one could encounter when generating bindings, though I hope most potential issues will be captured by this document.
 
+This document describes most of the steps taken to create the binding library which can be useful when encountering issues or when additional dependencies are required. But in practice if dependencies don't change most likely you'd only need to update the JAR's / AAR's in each project whenever new versions are released and then run:
+
+`$ make binding`
+
+The above command will clean the Photector library and all dependencies and re-generate the binding DLL's and afterwards copy the DLL's to the `Release` directory.
+
 ## Getting the Gradle dependencies
 
 In order to get the Gradle dependencies, one needs to just sync Gradle from the native Photector Android SDK project. The dependencies will be downloaded into `~/.gradle/caches/modules-2/files-2.1`. 
