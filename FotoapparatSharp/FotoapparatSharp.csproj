@@ -36,6 +36,8 @@
     <AndroidLinkTool>r8</AndroidLinkTool>
  -->  <!--     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidLinkTool>r8</AndroidLinkTool>
+ -->  <!--     <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
  -->  
 <!--     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidLinkTool>r8</AndroidLinkTool>

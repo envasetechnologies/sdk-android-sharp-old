@@ -1,5 +1,7 @@
 PHONY: binding _clean _build _copy_dlls
 
+OUTPUT_DIR := $(shell pwd)/Release/
+
 binding: _clean _build _copy_dlls
 	# Make binding
 
@@ -11,8 +13,9 @@ _build:
 	# Build all targets if needed
 	msbuild /t:Build
 
-_copy_dlls:
+_copy_dlls:	
 	# Copy all DLL's to the Release directory & afterwards remove Demo.dll
-	rm Release/**
-	find Demo/bin/Debug/ -type f -name '*.dll' | xargs -J % cp % Release/
-	rm Release/Demo.dll
+	if [[ -d "${OUTPUT_DIR}" ]]; then rm -Rf "${OUTPUT_DIR}"; fi
+	if [[ ! -d "${OUTPUT_DIR}" ]]; then mkdir "${OUTPUT_DIR}"; fi
+	find "Demo/bin/Debug/" -iname \*.dll -exec cp {} "${OUTPUT_DIR}" \;
+	rm "${OUTPUT_DIR}Demo.dll"
